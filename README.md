@@ -20,8 +20,9 @@ docker logs jenkins
 ```
 
 - Install suggested plugins & create "First Admin User" (all name with `root`)
-- Install "Docker Pipeline"
+- Install "Docker Pipeline", "Docker" plugins
   - Once login-ed, Manage Jenkins &#8594; Plugins &#8594; Available plugins &#8594; Search "Docker Pipeline" and install
+- Jenkins Dashboard &#8594; "Manage Jenkins Jenkins" &#8594; "System" &#8594; Search for "GitHub API usage" and select "Never check rate limit"
 
 ### Connect Jenkins to Github
 
@@ -66,7 +67,6 @@ HTTP Requests
 
 #### Create a new item in Jenkins
 
-- Jenkins Dashboard &#8594; "Manage Jenkins Jenkins" &#8594; "System" &#8594; Search for "GitHub API usage" and select "Never check rate limit"
 - Jenkins Dashboard &#8594; Select "New Item" (Note: this will contain multiple projects, say `codexplore`) &#8594; Select "Multi-branch pipeline"
 - Add the github repo [jenkins tutorial](https://github.com/CodexploreRepo/jenkins) as a sub-item inside `codexplore`
   - Branch Sources:
